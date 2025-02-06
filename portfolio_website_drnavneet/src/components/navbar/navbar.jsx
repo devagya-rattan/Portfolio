@@ -4,8 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-// import IconButton from '@mui/material/IconButton';
-// import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
@@ -25,9 +24,9 @@ export default function Navbar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Navneet Kumar Shukla
           </Typography>
-          <Button color="inherit">Home</Button>
-          <Button color="inherit">About</Button>
-          <Button color="inherit">Projects</Button>
+          <Link to="/"><Button color="inherit">Home</Button></Link>
+          <Link to="/about"> <Button color="inherit">About</Button></Link>
+          <Link to="/projects"><Button color="inherit">Projects</Button></Link>
         </Toolbar>
       </AppBar>
     </Box>
