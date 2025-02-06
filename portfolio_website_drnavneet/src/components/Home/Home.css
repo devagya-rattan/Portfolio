@@ -1,0 +1,32 @@
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+    gap: 20vw;
+}
+.container img{
+    width: 25vw;
+    height: 70vh;
+    /* border-radius: 50%; */
+}
+.content{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4vh;
+}
+.content h1{
+    font-size: 3.5vw;
+    font-weight: 700;
+    color: #8B4513;
+}
