@@ -1,8 +1,24 @@
+import { useEffect, useState } from "react";
 import ProjectsData from "../../Data/Projects/ProjectsData";
 import { Link } from "react-router-dom";
+import HashLoader from "react-spinners/HashLoader";
 
 const Projects = () => {
+   const [loading, setLoading] = useState(true);
+      
+        useEffect(() => {
+          const timer = setTimeout(() => {
+            setLoading(false);
+          }, 500);
+          return () => clearTimeout(timer);
+        }, []);
   return (
+    <>
+        {loading ? (
+            <div className="flex justify-center items-center h-[90vh]">
+              <HashLoader color="#8B4513" />
+            </div>
+          ) :(
     <div className="min-h-screen font-sans">
       {/* Hero Section */}
       <div className="relative w-full h-screen flex items-center justify-center bg-white text-[#8B4513]">
@@ -65,6 +81,8 @@ const Projects = () => {
         ))}
       </div>
     </div>
+    )}
+        </>
   );
 };
 
