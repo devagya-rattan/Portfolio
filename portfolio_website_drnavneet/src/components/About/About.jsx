@@ -1,7 +1,24 @@
+import { useEffect, useState } from "react";
 import AboutData from "../../Data/About/AboutData";
+import HashLoader from "react-spinners/HashLoader";
 
 const About = () => {
+    const [loading, setLoading] = useState(true);
+    
+      useEffect(() => {
+        const timer = setTimeout(() => {
+          setLoading(false);
+        }, 500);
+        return () => clearTimeout(timer);
+      }, []);
+    
     return (
+        <>
+        {loading ? (
+            <div className="flex justify-center items-center h-[90vh]">
+              <HashLoader color="#8B4513" />
+            </div>
+          ) :(
         <div>
             {/* first page about */}
             <div className="w-full h-screen  pt-10 px-20 flex items-center">
@@ -70,6 +87,8 @@ const About = () => {
                 </div>
             </div>
         </div>
+          )}
+        </>
     );
 }
 
