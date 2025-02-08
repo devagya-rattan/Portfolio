@@ -22,77 +22,73 @@ const About = () => {
         </div>
       ) : (
         <div>
-         {/* About Section */}
-         <div className="w-full min-h-screen pt-10 pb-8 px-2 md:px-6 sm:px-20 flex flex-col sm:flex-row items-center">
-  <div className="w-full sm:w-1/2 px-2 md:px-10">
-    <h1 className="text-4xl sm:text-7xl font-bold text-center sm:text-left">{AboutData.title || 'About'}</h1>
-    <p className="pt-4 font-medium text-lg sm:text-xl">{AboutData.para1}</p>
-    <p className="font-medium pt-1 text-lg sm:text-xl">{AboutData.para2}</p>
-  </div>
-  <div className="w-full sm:w-1/2 flex justify-center  mt-6 sm:mt-0">
-    <img 
-      src="https://www.rifmjpru.com/img/mentorsprofile/Navneet_Kumar_shukla.jpeg" 
-      alt="Profile" 
-      className="w-3/4 h-auto max-w-md"
-    />
-  </div>
-</div>
+          {/* About Section */}
+          <div className="w-full min-h-screen pt-10 pb-8 px-2 md:px-6 sm:px-20 flex flex-col sm:flex-row items-center">
+            <div className="w-full sm:w-1/2 px-2 md:px-10">
+              <h1 className="text-4xl sm:text-7xl font-bold text-center sm:text-left">{AboutData.title || 'About'}</h1>
+              <p className="pt-4 font-medium text-lg sm:text-xl">{AboutData.para1}</p>
+              <p className="font-medium pt-1 text-lg sm:text-xl">{AboutData.para2}</p>
+            </div>
+            <div className="w-full sm:w-1/2 flex justify-center  mt-6 sm:mt-0">
+              <img
+                src="https://www.rifmjpru.com/img/mentorsprofile/Navneet_Kumar_shukla.jpeg"
+                alt="Profile"
+                className="w-3/4 h-auto max-w-md"
+              />
+            </div>
+          </div>
 
+          <div className="w-full h-screen bg-amber-50 text-[#5C4033] pt-10 px-6 sm:px-30 flex flex-col sm:flex-row items-center">
+            <div className="w-full sm:w-1/2">
+              <h1 className="text-4xl sm:text-7xl font-bold text-center sm:text-left">Education</h1>
+            </div>
+            <div className="w-full sm:w-1/2 flex flex-col justify-center sm:pl-10">
+              <div className="py-4">
+                <p className="text-2xl sm:text-3xl font-sm">{AboutData.year1}</p>
+                <p className="font-medium text-xl sm:text-2xl pt-1">{AboutData.edu1}</p>
+                <p className="font-normal text-lg sm:text-xl pt-1">{AboutData.col1}</p>
+              </div>
+              <div className="py-4">
+                <p className="text-2xl sm:text-3xl font-sm">{AboutData.year2}</p>
+                <p className="font-medium text-xl sm:text-2xl pt-1">{AboutData.edu2}</p>
+                <p className="font-normal text-lg sm:text-xl pt-1">{AboutData.col2}</p>
+              </div>
+              <div className="py-4">
+                <p className="text-2xl sm:text-3xl font-sm">{AboutData.year3}</p>
+                <p className="font-medium text-xl sm:text-2xl pt-1">{AboutData.edu3}</p>
+                <p className="font-normal text-lg sm:text-xl pt-1">{AboutData.col3}</p>
+              </div>
+            </div>
+          </div>
 
+          <div className="w-full min-h-screen lg:h-screen pt-10 px-6 sm:px-30 flex flex-col sm:flex-row items-center">
+            <div className="w-full sm:w-1/2">
+              <h1 className="text-4xl sm:text-7xl font-bold text-center sm:text-left pl-10">{AboutData.title || 'Experience'}</h1>
+            </div>
+            <div className="w-full sm:w-1/2 flex flex-col justify-center sm:pl-10 mt-6 sm:mt-0">
+              <div className="py-6">
+                <p className="text-2xl sm:text-3xl font-sm">{AboutData.expy1}</p>
+                <p className="font-medium text-base sm:text-xl pt-1">{AboutData.expd1}</p>
+                <p className="font-normal text-base sm:text-lg pt-1">{AboutData.expp2}</p>
 
+                <p className="pt-4 text-2xl sm:text-3xl font-sm">{AboutData.expy2}</p>
+                <p className="font-medium text-base sm:text-xl pt-1">{AboutData.expd2}</p>
+                <p className="font-normal text-base sm:text-lg pt-1">{AboutData.expp2}</p>
 
+                <p className="pt-4 text-2xl sm:text-3xl font-sm">{AboutData.expy3}</p>
+                <p className="font-medium text-base sm:text-xl pt-1">{AboutData.expd3}</p>
+                <p className="font-normal text-base sm:text-lg pt-1">{AboutData.expp3}</p>
 
-<div className="w-full h-screen bg-amber-50 text-[#5C4033] pt-10 px-6 sm:px-30 flex flex-col sm:flex-row items-center">
-  <div className="w-full sm:w-1/2">
-    <h1 className="text-4xl sm:text-7xl font-bold text-center sm:text-left">Education</h1>
-  </div>
-  <div className="w-full sm:w-1/2 flex flex-col justify-center sm:pl-10">
-    <div className="py-4">
-      <p className="text-2xl sm:text-3xl font-sm">{AboutData.year1}</p>
-      <p className="font-medium text-xl sm:text-2xl pt-1">{AboutData.edu1}</p>
-      <p className="font-normal text-lg sm:text-xl pt-1">{AboutData.col1}</p>
-    </div>
-    <div className="py-4">
-      <p className="text-2xl sm:text-3xl font-sm">{AboutData.year2}</p>
-      <p className="font-medium text-xl sm:text-2xl pt-1">{AboutData.edu2}</p>
-      <p className="font-normal text-lg sm:text-xl pt-1">{AboutData.col2}</p>
-    </div>
-    <div className="py-4">
-      <p className="text-2xl sm:text-3xl font-sm">{AboutData.year3}</p>
-      <p className="font-medium text-xl sm:text-2xl pt-1">{AboutData.edu3}</p>
-      <p className="font-normal text-lg sm:text-xl pt-1">{AboutData.col3}</p>
-    </div>
-  </div>
-</div>
+                <p className="pt-4 text-2xl sm:text-3xl font-sm">{AboutData.expy4}</p>
+                <p className="font-medium text-base sm:text-xl pt-1">{AboutData.expd4}</p>
+                <p className="font-normal text-base sm:text-lg pt-1">{AboutData.expp4}</p>
 
-<div className="w-full min-h-screen lg:h-screen pt-10 px-6 sm:px-30 flex flex-col sm:flex-row items-center">
-  <div className="w-full sm:w-1/2">
-    <h1 className="text-4xl sm:text-7xl font-bold text-center sm:text-left pl-10">{AboutData.title || 'Experience'}</h1>
-  </div>
-  <div className="w-full sm:w-1/2 flex flex-col justify-center sm:pl-10 mt-6 sm:mt-0">
-    <div className="py-6">
-      <p className="text-2xl sm:text-3xl font-sm">{AboutData.expy1}</p>
-      <p className="font-medium text-base sm:text-xl pt-1">{AboutData.expd1}</p>
-      <p className="font-normal text-base sm:text-lg pt-1">{AboutData.expp2}</p>
-
-      <p className="pt-4 text-2xl sm:text-3xl font-sm">{AboutData.expy2}</p>
-      <p className="font-medium text-base sm:text-xl pt-1">{AboutData.expd2}</p>
-      <p className="font-normal text-base sm:text-lg pt-1">{AboutData.expp2}</p>
-
-      <p className="pt-4 text-2xl sm:text-3xl font-sm">{AboutData.expy3}</p>
-      <p className="font-medium text-base sm:text-xl pt-1">{AboutData.expd3}</p>
-      <p className="font-normal text-base sm:text-lg pt-1">{AboutData.expp3}</p>
-
-      <p className="pt-4 text-2xl sm:text-3xl font-sm">{AboutData.expy4}</p>
-      <p className="font-medium text-base sm:text-xl pt-1">{AboutData.expd4}</p>
-      <p className="font-normal text-base sm:text-lg pt-1">{AboutData.expp4}</p>
-
-      <p className="pt-4 text-2xl sm:text-3xl font-sm">{AboutData.expy5}</p>
-      <p className="font-medium text-base sm:text-xl pt-1">{AboutData.expd5}</p>
-      <p className="font-normal text-base sm:text-lg pt-1">{AboutData.expp5}</p>
-    </div>
-  </div>
-</div>
+                <p className="pt-4 text-2xl sm:text-3xl font-sm">{AboutData.expy5}</p>
+                <p className="font-medium text-base sm:text-xl pt-1">{AboutData.expd5}</p>
+                <p className="font-normal text-base sm:text-lg pt-1">{AboutData.expp5}</p>
+              </div>
+            </div>
+          </div>
 
 
 
@@ -126,8 +122,6 @@ const About = () => {
               </div>
             </div>
           </div>
-
-
 
           <div className="py-10 px-6 flex justify-center items-center">
             <div className="max-w-4xl text-center p-5">
