@@ -3,7 +3,7 @@ import { Facebook, Twitter, Mail, Linkedin } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-[#5C4033] text-white py-8">
-      <div className="container mx-auto flex flex-col items-center px-4">
+      <div className="container mx-auto flex flex-col items-center px-4 z-30">
         {/* First Row: Contact Me & Icons */}
         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
           <p className="text-md font-semibold">Contact Me:</p>
