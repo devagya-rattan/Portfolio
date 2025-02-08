@@ -30,4 +30,23 @@ const AboutData={
 }
 export default AboutData;
  
-     
+export const affiliations = [
+    { title: "Mentor", description: "RIF Bareilly, IFTM & TMU (Startup Incubator)" },
+    { title: "National Mentor", description: "Startup India" },
+    { title: "State Mentor", description: "Startup Council Uttar Pradesh" },
+    { title: "Virtual State Mentor", description: "Startup Council Uttarakhand" },
+    { title: "Director", description: "Anveshan Translation Private Limited" },
+    { title: "Marketing Consultant", description: "Unizal Pharmaceutical Pvt Limited" },
+    { title: "Senior Vice President", description: "Shri Anandam Seva Trust (Under 80 G)" },
+    { title: "Head of Policy Cell", description: "Youth Power Association (Reg NGO & 80 G)" },
+    { title: "Lifetime Member", description: "Indian Commerce Association" },
+  ];
+  
+  export const awards = [
+    { title: "Shan-E-City Bareilly Award 2021", description: "By Dainik Jagaran and Radio City Bareilly" },
+    { title: "City Ka Yaar 2018 Award", description: "By Radio City F.M" },
+    { title: "Youth Icon Of Bareilly 2019", description: "" },
+    { title: "Extraordinary Talent Award 2019", description: "For Educational and Social Work by Geniuses World Records" },
+    { title: "Corona Warrior", description: "By Pad Bank Foundation" },
+  ];
+  
