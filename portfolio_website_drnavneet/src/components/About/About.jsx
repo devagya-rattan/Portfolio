@@ -29,7 +29,7 @@ const About = () => {
                 </div>
                 <div className="w-1/2 flex justify-center">
                     <img 
-                        src="https://static.vecteezy.com/system/resources/previews/001/840/612/non_2x/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg" 
+                        src="https://www.rifmjpru.com/img/mentorsprofile/Navneet_Kumar_shukla.jpeg" 
                         alt="Profile" 
                         className="w-3/4 h-auto max-w-md"
                     />
@@ -41,7 +41,7 @@ const About = () => {
                 </div>
                 <div className="w-1/2 flex-col justify-center">
                 <div className="py-4">
-                <p className="pt-4 text-3xl  font-light">{AboutData.year1}</p>
+                <p className="pt-4 text-3xl  font-sm">{AboutData.year1}</p>
                 <p className="font-light text-2xl pt-1">{AboutData.edu1}</p>
                 <p className="font-light text-xl pt-1">{AboutData.col1}</p>
                 </div>
