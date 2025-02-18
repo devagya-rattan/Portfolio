@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
           <p className="text-md font-semibold">Contact Me:</p>
           <div className="flex flex-wrap justify-center md:justify-start space-x-6 space-y-4 md:space-y-0">
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/navneetdth" target="_blank" rel="noopener noreferrer">
               <Twitter className="w-7 h-7 hover:text-blue-400 transition-transform transform hover:scale-110" />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/navneetdth/" target="_blank" rel="noopener noreferrer">
               <Facebook className="w-7 h-7 hover:text-blue-600 transition-transform transform hover:scale-110" />
             </a>
             <a href="https://mail.google.com/mail/?view=cm&to=navneetdth@gmail.com" target="_blank" rel="noopener noreferrer">
