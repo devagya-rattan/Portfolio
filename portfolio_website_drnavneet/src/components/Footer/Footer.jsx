@@ -1,5 +1,5 @@
 import { Facebook, Twitter, Mail, Linkedin } from "lucide-react";
-
+//footer
 const Footer = () => {
   return (
     <footer className="bg-[#5C4033] text-white py-8">
