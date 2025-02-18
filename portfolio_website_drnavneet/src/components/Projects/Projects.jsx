@@ -1,3 +1,4 @@
+// Project.jsx
 import { useState, useEffect, useRef } from "react";
 import { HashLoader } from "react-spinners";
 import { AiOutlineClose } from "react-icons/ai";
@@ -20,7 +21,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="min-h-screen font-sans bg-gradient-to-b from-white to-gray-100">
+    <div className="min-h-screen font-sans bg-gradient-to-b from-amber-50 to-white">
       {loading ? (
         <div className="flex items-center justify-center min-h-screen">
           <HashLoader color="#8B4513" />
@@ -62,9 +63,9 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="px-6 md:px-16 py-16 bg-[#8B4513]"
+              className="px-6 md:px-16 py-16 bg-amber-50"
             >
-              <h2 className="text-4xl md:text-5xl font-extrabold text-white text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-extrabold text-[#8B4513] text-center mb-12">
                 My Work & Contributions
               </h2>
               <div className="max-w-6xl mx-auto space-y-12">
@@ -106,7 +107,7 @@ const Projects = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4 }}
-                className="fixed inset-0 flex justify-center items-center bg-black/50 backdrop-blur-md px-4 sm:px-8"
+                className="fixed inset-0 flex justify-center items-center z-50 bg-black/50 backdrop-blur-md px-4 sm:px-8"
               >
                 <motion.div
                   initial={{ y: 50 }}
