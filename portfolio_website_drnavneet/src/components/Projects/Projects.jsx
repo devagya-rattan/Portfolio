@@ -90,7 +90,7 @@ const Projects = () => {
                         {project.title}
                       </h3>
                       <p className="text-gray-700 mt-2">
-                        {project.description.substring(0, 100)}...
+                        {project.description}
                       </p>
                     </div>
                   </motion.div>
@@ -179,7 +179,7 @@ const Projects = () => {
                         {project.title}
                       </h3>
                       <p className="text-gray-700 mt-2">
-                        {project.description.substring(0, 20)}...
+                        {project.description.substring(0, 100)}...
                       </p>
                     </div>
                   </motion.div>
