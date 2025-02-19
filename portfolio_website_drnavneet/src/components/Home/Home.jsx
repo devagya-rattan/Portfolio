@@ -82,11 +82,11 @@ const Home = () => {
               />
             </div>
 
-            <div className="relative w-[90vw] md:w-[60vw] lg:w-[35vw] flex flex-col justify-center items-center lg:items-start gap-6 text-[#8B4513] text-center lg:text-left">
+            <div className="relative w-[90vw] md:w-[60vw] lg:w-[35vw] flex flex-col justify-center items-center lg:items-start gap-6 text-[#8B4513] text-center lg:text-left ">
               <h1 className="text-2xl md:text-3xl lg:text-[3.5vw] text-black font-bold">
                 {IntroductionData.title}
               </h1>
-              <p className="text-lg text-[#bb682c] font-semibold">
+              <p className="text-xl text-[#bb682c] font-semibold">
                 {IntroductionData.description}
               </p>
               <p className="flex justify-center lg:justify-start text-2xl gap-1.5">
@@ -116,26 +116,32 @@ const Home = () => {
           </div>
 
           {/* Introduction Section */}
-          <div className="container bg-amber-50 w-full h-auto lg:h-[90vh] flex flex-col justify-center items-center p-6">
+          <div className="container bg-amber-50 w-full h-auto  lg:h-[90vh] flex flex-col justify-center items-center p-6 ">
             <div className="relative w-[90vw] md:w-[70vw] flex flex-col justify-center items-center gap-6 text-[#8B4513] text-center">
               <h1 className="text-2xl md:text-3xl lg:text-[3.5vw] text-black font-bold">
                 {IntroductionData.title3}
               </h1>
-              <p className="text-lg text-[#bb682c] font-semibold">
-                {IntroductionData.description4}
+              <p className="text-2xl  text-[#bb682c] font-semibold">
+                - {IntroductionData.description4}
               </p>
-              <p className="text-lg text-[#bb682c] font-semibold">
-                {IntroductionData.description5}
+              <p className="text-2xl  text-[#bb682c] font-semibold">
+                - {IntroductionData.description5}
               </p>
-              <p className="text-lg text-[#bb682c] font-semibold">
-                {IntroductionData.description6}
+              <p className="text-2xl  text-[#bb682c] font-semibold">
+                - {IntroductionData.description6}
               </p>
-              <p className="text-lg text-[#bb682c] font-semibold">
-                {IntroductionData.description7}
+              <p className="text-2xl  text-[#bb682c] font-semibold">
+                - {IntroductionData.description7}
+              </p>
+              <p className="text-2xl  text-[#bb682c] font-semibold">
+                - {IntroductionData.description8}
+              </p>
+              <p className="text-2xl  text-[#bb682c] font-semibold">
+                - {IntroductionData.description9}
               </p>
               <div>
                 <Link to="/projects">
-                  <button className="px-6 py-2 border-2 border-[#8B4513] hover:bg-[#8B4513] hover:text-white transition cursor-pointer my-2">
+                  <button className="px-6 py-2 border-2 border-[#8B4513] hover:bg-[#8B4513] hover:text-white transition cursor-pointer my-2 text-2xl">
                     More
                   </button>
                 </Link>
@@ -144,8 +150,8 @@ const Home = () => {
           </div>
 
           {/* Video & Media Section */}
-          <div className="container  w-full h-auto lg:h-[90vh] flex flex-col justify-center items-center p-6">
-            <div className="w-full lg:w-[80%] flex flex-col justify-center items-center gap-6 text-[#8B4513] text-center">
+          <div className="container w-full h-auto lg:h-[90vh] flex flex-col justify-center items-center p-6">
+            <div className="w-full lg:w-[100%] flex flex-col justify-center items-center gap-6 text-[#8B4513] text-center flex-wrap">
               <h1 className="text-2xl md:text-3xl lg:text-[3.5vw] text-black font-bold">
                 {IntroductionData.title2}
               </h1>
@@ -153,39 +159,88 @@ const Home = () => {
               {/* Videos Container */}
               <div className="videos flex flex-col lg:flex-row justify-center items-center gap-6 w-full">
                 {/* MP4 Video */}
-                <div className="w-full lg:w-[48%]">
+                <div className="w-full lg:w-[70%] aspect-video">
                   <iframe
                     width="100%"
-                    height="400"
+                    height="100%"
                     src={IntroductionData.description2}
-                    frameBorder="0"
+                    allowFullScreen
+                    className="rounded-lg shadow-lg"
+                  ></iframe>
+                </div>
+                <div className="w-full lg:w-[70%] aspect-video">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/O8y4PfSYOP0"
                     allowFullScreen
                     className="rounded-lg shadow-lg"
                   ></iframe>
                 </div>
 
                 {/* Facebook Video Embed */}
-                <div className="w-full lg:w-[48%]">
-                  <iframe
-                    width="100%"
-                    height="400"
-                    src="https://www.facebook.com/video/embed?video_id=1027514241237202"
-                    allow="autoplay; encrypted-media"
-                    allowFullScreen
-                    className="rounded-lg shadow-lg"
-                  ></iframe>
+                <div className="w-full lg:w-[70%] aspect-video">
+                  <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
+                    <iframe
+                      src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(
+                        "https://www.facebook.com/navneetdth/videos/1027514241237202/"
+                      )}`}
+                      width="100%"
+                      height="100%"
+                      style={{ position: "absolute", top: 0, left: 0 }}
+                      scrolling="no"
+                      frameBorder="0"
+                      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </div>
+
+                {/* Another Facebook Video Embed */}
+                <div className="w-full lg:w-[70%] aspect-video">
+                  <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
+                    <iframe
+                      src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(
+                        "https://www.facebook.com/navneetdth/videos/4715178375258882"
+                      )}`}
+                      width="100%"
+                      height="100%"
+                      style={{ position: "absolute", top: 0, left: 0 }}
+                      scrolling="no"
+                      frameBorder="0"
+                      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </div>
+                <div className="w-full lg:w-[70%] aspect-video">
+                  <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
+                    <iframe
+                      src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(
+                        "https://www.facebook.com/100000976965363/videos/886526336990273/"
+                      )}`}
+                      width="100%"
+                      height="100%"
+                      style={{ position: "absolute", top: 0, left: 0 }}
+                      scrolling="no"
+                      frameBorder="0"
+                      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
                 </div>
               </div>
 
               <div>
                 <Link to="/projects">
-                  <button className="px-6 py-2 border-2 border-[#8B4513] hover:bg-[#8B4513] hover:text-white transition cursor-pointer my-2">
+                  <button className="px-6 py-2 border-2 border-[#8B4513] hover:bg-[#8B4513] hover:text-white transition cursor-pointer my-2 text-2xl">
                     More
                   </button>
                 </Link>
               </div>
             </div>
           </div>
+
           {/* Carousel Section */}
           <div className="container bg-amber-50 w-full h-auto lg:h-[90vh] flex flex-col justify-center items-center p-6">
             <div className="w-full flex flex-col justify-center items-center gap-6 text-[#8B4513] text-center">
