@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import AboutData from "../../Data/About/AboutData";
 import HashLoader from "react-spinners/HashLoader";
 import { affiliations, awards } from "../../Data/About/AboutData";
-
+import navnitsir from "../../assets/navni.jpg";
 
 const About = () => {
   const [loading, setLoading] = useState(true);
@@ -31,7 +31,7 @@ const About = () => {
             </div>
             <div className="w-full sm:w-1/2 flex justify-center  mt-6 sm:mt-0">
               <img
-                src="https://www.rifmjpru.com/img/mentorsprofile/Navneet_Kumar_shukla.jpeg"
+                src={navnitsir}
                 alt="Profile"
                 className="w-3/4 h-auto max-w-md"
               />
