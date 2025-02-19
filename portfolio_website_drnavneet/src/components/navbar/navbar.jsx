@@ -25,7 +25,7 @@ export default function Navbar() {
             </IconButton>
 
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Navneet Kumar Shukla
+              Navnit Kumar Shukla
             </Typography>
 
             {/* Desktop Links */}
