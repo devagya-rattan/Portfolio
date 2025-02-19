@@ -54,6 +54,11 @@ const About = () => {
                 <p className="font-normal text-lg sm:text-xl pt-1">{AboutData.col2}</p>
               </div>
               <div className="py-4">
+                <p className="text-2xl sm:text-3xl font-sm">{AboutData.year0}</p>
+                <p className="font-medium text-xl sm:text-2xl pt-1">{AboutData.edu0}</p>
+                <p className="font-normal text-lg sm:text-xl pt-1">{AboutData.col0}</p>
+              </div>
+              <div className="py-4">
                 <p className="text-2xl sm:text-3xl font-sm">{AboutData.year3}</p>
                 <p className="font-medium text-xl sm:text-2xl pt-1">{AboutData.edu3}</p>
                 <p className="font-normal text-lg sm:text-xl pt-1">{AboutData.col3}</p>
@@ -69,7 +74,7 @@ const About = () => {
               <div className="py-6">
                 <p className="text-2xl sm:text-3xl font-sm">{AboutData.expy1}</p>
                 <p className="font-medium text-base sm:text-xl pt-1">{AboutData.expd1}</p>
-                <p className="font-normal text-base sm:text-lg pt-1">{AboutData.expp2}</p>
+                <p className="font-normal text-base sm:text-lg pt-1">{AboutData.expp11}</p>
 
                 <p className="pt-4 text-2xl sm:text-3xl font-sm">{AboutData.expy2}</p>
                 <p className="font-medium text-base sm:text-xl pt-1">{AboutData.expd2}</p>
