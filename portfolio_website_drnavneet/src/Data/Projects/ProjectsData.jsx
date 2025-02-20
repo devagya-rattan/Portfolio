@@ -17,6 +17,7 @@ import Image16 from "../../assets/WhatsApp Image 2025-02-18 at 12.38.18.jpeg";
 import Image17 from "../../assets/WhatsApp Image 2025-02-18 at 12.38.22.jpeg";
 import Image18 from "../../assets/award1.jpeg";
 
+
 const ProjectsData = [
   {
     title: "Lecture at IET Lucknow on Startup",
@@ -35,9 +36,8 @@ const ProjectsData = [
   },
   {
     title: "Books on Wheels: Inspiring Reading in Bareilly",
-    description: `"Books on Wheels," an initiative in Bareilly, India, is bringing the joy of reading to the community by distributing books from a mobile library.  Inspired by the ${(
-      <b>late Professor VP Dixit</b>
-    )}, and driven by Dr. Navnit Kumar Shukla and a team of young volunteers, this project carries over 800 books, encouraging literacy and providing free access to literature. The "Books on Wheels" car travels to different areas of the city, offering a variety of books, including novels, stories, self-help books, magazines, and newspapers in both Hindi and English.  The initiative not only promotes reading habits but also accepts book donations, further enriching their collection.  The team also keeps a record of loaned books to ensure their return.  This inspiring project has garnered significant community support and has become a beloved fixture in Bareilly, fostering a culture of reading and honoring the legacy of Professor Dixit.`,
+    description: `"Books on Wheels," an initiative in Bareilly, India, is bringing the joy of reading to the community by distributing books from a mobile library. Inspired by the late Professor VP Dixit
+    , and driven by Dr. Navnit Kumar Shukla and a team of young volunteers, this project carries over 800 books, encouraging literacy and providing free access to literature. The "Books on Wheels" car travels to different areas of the city, offering a variety of books, including novels, stories, self-help books, magazines, and newspapers in both Hindi and English. The initiative not only promotes reading habits but also accepts book donations, further enriching their collection. The team also keeps a record of loaned books to ensure their return. This inspiring project has garnered significant community support and has become a beloved fixture in Bareilly, fostering a culture of reading and honoring the legacy of Professor Dixit.`,
     image: Image5,
   },
   {

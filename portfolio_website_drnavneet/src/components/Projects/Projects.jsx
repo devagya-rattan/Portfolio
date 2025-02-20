@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { HashLoader } from "react-spinners";
 import { AiOutlineClose } from "react-icons/ai";
 import { motion, AnimatePresence } from "framer-motion";
-import ProjectsData from "../../Data/Projects/ProjectsData";
+import ProjectsData from "../../Data/Projects/ProjectsData.jsx";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
