@@ -17,6 +17,7 @@ import Image16 from "../../assets/WhatsApp Image 2025-02-18 at 12.38.18.jpeg";
 import Image17 from "../../assets/WhatsApp Image 2025-02-18 at 12.38.22.jpeg";
 import Image18 from "../../assets/award1.jpeg";
 
+
 const ProjectsData = [
   {
     title: "Lecture at IET Lucknow on Startup",
